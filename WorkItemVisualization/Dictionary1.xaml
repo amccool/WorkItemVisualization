@@ -1,0 +1,19 @@
+﻿<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+              x:Name="CheckedList">
+    <Window.Resources>
+        <DataTemplate x:Key="CheckedList">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <CheckBox Grid.Column="1"></CheckBox>
+                <Label Grid.Column="2" Content="{Binding Path=LinkType}"></Label>
+            </Grid>
+        </DataTemplate>
+    </Window.Resources>
+</Window>

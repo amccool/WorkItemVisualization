@@ -1,0 +1,16 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <DataTemplate x:Key="SelectionColumn">
+        <Label>
+            <Label.Content>
+                <CheckBox IsChecked="{Binding Path=Selected}" />
+            </Label.Content>
+        </Label>
+    </DataTemplate>
+    <HierarchicalDataTemplate x:Key="TreeNodeX" ItemsSource="{Binding Path=Items}">
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+            <Image Width="16" Height="16" Source="{Binding Path=Image}" />
+            <Label Content="{Binding Path=Text}" />
+        </StackPanel>
+    </HierarchicalDataTemplate>
+</ResourceDictionary>
